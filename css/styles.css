@@ -295,6 +295,9 @@ ul {
   flex-basis: calc(100% / 4 - var(--pictures-margin));
   margin-left: var(--pictures-margin);
   background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* .specialist-item {
@@ -382,7 +385,6 @@ ul {
 }
 
 .footer-address {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -392,7 +394,6 @@ ul {
 }
 
 .footer-contact {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -493,6 +494,7 @@ ul {
   flex-basis: calc(100% / 3 - var(--pictures-margin));
   margin-left: var(--pictures-margin);
   margin-top: var(--pictures-margin);
+  /* material shadow v1 */
 }
 
 /* .picture-item:nth-child(3n) {
