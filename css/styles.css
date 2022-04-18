@@ -8,6 +8,7 @@
   --white-color: #ffffff;
   --pictures-margin: 30px;
   --title-text-color: #212121;
+  --btn-hover-color: #188ce8;
 }
 
 body {
@@ -65,12 +66,16 @@ ul {
 /* -----------header---------- */
 .header {
   background: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 .header-section {
   display: flex;
   align-items: center;
 }
+
 .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: inline-block;
   font-family: 'Raleway';
   font-style: normal;
@@ -117,6 +122,10 @@ ul {
   letter-spacing: 0.02em;
   color: var(--header-color);
 }
+.header-nav {
+  margin-left: 93px;
+}
+
 .nav-list {
   display: flex;
   margin-left: 93px;
@@ -126,6 +135,7 @@ ul {
   color: var(--allocate-color);
 }
 .header-contact {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-style: normal;
@@ -151,7 +161,9 @@ ul {
 .title {
   background-color: #2f303a;
   text-align: center;
-  margin-top: 5px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 .hero-container {
   padding-top: 200px;
@@ -161,7 +173,7 @@ ul {
 .main-title {
   display: inline-block;
   width: 696px;
-  height: 120;
+
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -172,29 +184,24 @@ ul {
 }
 
 .main-btn {
-  display: block;
-  border-radius: 4px;
-  height: 50px;
-  width: 200px;
-  align-items: center;
-  text-align: center;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: inherit;
-  /* padding: 10px 32px; */
-  background: var(--allocate-color);
-  box-shadow: 0px 4px 4px rgba(255, 254, 254, 0.15);
-
-  cursor: pointer;
-
-  /* font-family: 'Roboto'; */
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
   color: var(--white-color);
+  background-color: var(--allocate-color);
+  cursor: pointer;
+  border: none;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: block;
+  margin: auto;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--btn-hover-color);
 }
 
 /* --------section 2-------- */
@@ -215,7 +222,6 @@ ul {
   margin-right: 0;
 }
 .reasons-title {
-  margin-top: 88px;
   margin-bottom: 0;
 
   font-style: normal;
@@ -242,9 +248,12 @@ ul {
 
 .about {
   background: #ffffff;
+  padding-bottom: 94px;
 }
 .about-img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .about-list {
   display: flex;
@@ -297,7 +306,6 @@ ul {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 /* .specialist-item {
@@ -305,9 +313,7 @@ ul {
   margin-left: var(--pictures-margin);
 } */
 .specialist-item-title {
-  padding: 0;
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -330,9 +336,6 @@ ul {
 }
 
 .specialist-text {
-  padding-bottom: 30px;
-  margin-top: 10px;
-  margin-bottom: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -451,17 +454,6 @@ ul {
   min-width: 73px;
   text-align: center;
   color: var(--button-text);
-
-  /* border: none;
-  border-radius: 4px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--button-text); */
 }
 
 .main-button:hover,
@@ -481,9 +473,18 @@ ul {
 .border {
   border: 1px solid #eeeeee;
 }
+.pic-content {
+  padding: 20px 24px;
+}
+.card-content {
+  background-color: var(--white-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .picture-img {
   display: block;
   max-width: 100%;
+  height: auto;
 
   /* background-color: #ffffff;
   border: 1px solid #eeeeee;
@@ -502,8 +503,6 @@ ul {
 } */
 
 .picture-title {
-  margin-top: 20px;
-  padding-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
